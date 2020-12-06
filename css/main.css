@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	line-height: 1.6
+	line-height: 1.6;
 	color: #333;
 }
 
@@ -44,10 +44,15 @@ hr {
 	padding-top: 28px;
 }
 
+.header--bg {
+	background-color: #eb8b8d;
+	padding: 10px;
+}
+
 .header.fixed {
 	padding: 10px;
 	background-color: #eb8b8d;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);	
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -67,6 +72,7 @@ hr {
 }
 
 .header__logo {
+	text-decoration: none;
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
@@ -99,7 +105,7 @@ hr {
 	top: 100%;
 	left: 0;
 	z-index: 1;
-	
+
 }
 
 .nav__link:hover {
@@ -245,11 +251,13 @@ hr {
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 10px 26px;
-	/*text-align: center;*/
-	/*margin: 50px auto 0;*/
 }
 
-.slider {
+.btn:hover {
+	text-decoration: underline;
+}
+
+/*.slider {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -294,7 +302,7 @@ hr {
 .slider__num {
 	font-size: 24px;
 	font-weight: 700;
-}
+}*/
 
 .section {
 	padding-top: 80px;
@@ -458,7 +466,6 @@ hr {
 
 .services__item {
 	width: 33.3333%;
-	/*margin-top: 40px;*/
 	padding: 40px 30px 40px 85px;
 	position: relative;
 }
@@ -535,7 +542,7 @@ hr {
 	border: 1px solid #e5e5e5;
 }
 
-.accordion__item.active 
+.accordion__item.active
 .accordion__text {
 	display: block;
 }
@@ -550,7 +557,7 @@ hr {
 .accordion__header {
 	padding: 20px 20px 15px 60px;
 	position: relative;
-	cursor: pointer;	
+	cursor: pointer;
 }
 
 .accordion__header:after {
@@ -597,7 +604,7 @@ hr {
 
 .reviews {
 	position: relative;
-	
+
 }
 
 .reviews .slick-slider {
@@ -675,7 +682,7 @@ hr {
 	border-top: 3px solid #ccc;
 	border-left: 3px solid #ccc;
 }
-	
+
 
 .slick-prev {
 	left: 20px;
@@ -767,7 +774,7 @@ hr {
 	text-align: center;
 	padding-top: 15px;
 	color: #fff;
-	
+
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -1030,7 +1037,7 @@ hr {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	color: #999;
-	margin: 30px 0 40px; 
+	margin: 30px 0 40px;
 }
 
 .footer__social {
@@ -1123,7 +1130,7 @@ hr {
 .blogs {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; 
+	justify-content: space-between;
 }
 
 .blogs__item {
@@ -1147,7 +1154,7 @@ hr {
 	font-size: 12px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #333;	
+	color: #333;
 	display: block;
 	line-height: 1.4;
 }
@@ -1191,6 +1198,7 @@ hr {
 	font-style: italic;
 	text-decoration: none;
 }
+
 .instagram__link:hover {
 	text-decoration: underline;
 }
@@ -1208,7 +1216,7 @@ hr {
 }
 
 @media (max-width: 1230px) {
-	
+
 	.intro__title {
 		font-size: 120px;
 	}
@@ -1223,7 +1231,7 @@ hr {
 }
 
 @media (max-width: 990px) {
-	
+
 	.intro__title {
 		font-size: 80px;
 	}
@@ -1239,7 +1247,7 @@ hr {
 	.stat__item {
 		flex: none;
 		width: 33.3333%;
-		border: 0; 
+		border: 0;
 		padding: 30px 0;
 	}
 
@@ -1322,7 +1330,7 @@ hr {
 	.header {
 		padding: 10px;
 	}
-	
+
 	.nav {
 		display: none;
 
@@ -1383,7 +1391,7 @@ hr {
 
 	.card__item {
 		width: 100%;
-		max-width: 410px; 
+		max-width: 410px;
 		margin: 15px auto 0;
 	}
 
@@ -1464,12 +1472,12 @@ hr {
 	.blogs__item:last-child {
 		margin-bottom: 0;
 	}
-	
+
 
 }
 
 @media (max-width: 575px) {
-	
+
 
 
 	.intro__title {
@@ -1593,5 +1601,67 @@ hr {
 
 	.blogs__title {
 		font-size: 10px;
+	}
 
+}
+
+
+/*Single blog post page*/
+
+
+.blog--post {
+	margin: 57px 0 80px;
+}
+
+.blog--post .blog__item {
+	padding-top: 80px;
+	margin: 0 auto;
+	max-width: 80%;
+	width: 100%;
+}
+
+.blog--post .blog__content {
+	margin: 30px 0;
+	padding: 30px 0;
+}
+
+.blog--post .blog__title {
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.blog--post .blog__title:hover {
+	text-decoration: none;
+}
+
+.blog--post .blog__text {
+	margin-top: 20px;
+}
+
+@media (max-width: 990px) {
+
+	.blog--post .blog__item {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 770px) {
+
+	.blog--post {
+		margin: 57px 0 30px;
+	}
+
+	.blog--post .blog__item {
+		padding-top: 30px;
+	}
+
+	.blog--post .blog__content {
+		margin: 10px 0;
+		padding: 15px 0;
+	}
+
+	.blog--post .blog__title {
+		font-size: 24px;
+	}
 }
